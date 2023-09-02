@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  */
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #131516;
+}
+
+
+/* cabecera */
+header {
+    /*background-color: #07243d;*/
+    background-color: #0A1931;
+    /*padding: 20px;*/
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+/* logo tikray y nombre */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+
+/* cuerpo */
+main{
+    /*background-color: #131516;*/
+    /*background-color: #0A1936;*/
+    padding: 0;
+    background-image: url('../img/fondo_landing_tikray.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.meme {
+    text-align: center;
+}
+.meme img{
+    height: 500px;
+}
+.logo-container img {
+    max-width: 70px;
+}
+main {
+    padding: 0;
+}
+
+
+/* ----------------------------------------------------------------------- SALUDO  */
+/* estilos de la seccion */
+.saludo {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+/* bienvenidos a */
+.saludo h2 {
+    padding-top: 80px;
+    font-size: 35px;
+    font-weight: 500;
+}
+/* Tik-Ray */
+.saludo h1 {
+    color: #01C38E;
+    font-size: 80px;
+}
+/* logo */
+.saludo img {
+    width: 200px;
+}
+/* tu solucion financiera... */
+.saludo h3 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+/* Rapido, Simple y Amigable */
+.saludo p {
+    font-size: 22px;
+}
+
+
+
+/* ----------------------------------------------------------------------- VIDEO DEMO */
+.video-demo {
+    text-align: center;
+    width: 100%;
+}
+.video-demo h2 {
+    color: #FFFFFF;
+    padding: 120px 0 50px;
+}
+.video-iframe {
+    width: 840px; /* Cambia el ancho a lo que desees */
+    height: 472.5px; /* Cambia la altura a lo que desees */
+}
+  
+
+
+/* ----------------------------------------------------------------------- ACTIVIDADES */
+.actividades {
+    text-align: center;
+    width: 100%;
+}
+.titulo-actividades {
+    color: #FFFFFF;
+    margin: 100px 0 30px;
+}
+.actividades .roles{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px; /* Reduccion espacio entre columnas*/
+    padding: 40px 70px 80px; /* Reducción el padding superior e inferior */
+}
+.actividades .roles .box .contenedor {
+    height: 13px;
+
+    border-radius: 30px;
+    backdrop-filter: blur(28px);
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 100%;
+    box-shadow: 0 1px 12 px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.actividades .roles .box .contenedor h2 {
+    padding: 15px 0;
+}
+.actividades .roles .box .contenedor p {
+    padding: 10px 30px 20px;
+    font-size: 20px;
+}
+
+
+
+/* ----------------------------------------------------------------------- FUNCIONES */
+/*
+.funcionamiento {
+    height: 100px;
+    border: solid 1px red; 
+    background: linear-gradient(to bottom, #FFFFFF, rgba(0,0,0,0));;
+}
+*/
+.funcionamiento {
+    text-align: center;
+    width: 100%;
+    /*border: solid 1px red;*/
+}
+.funcionamiento h2 {
+    color: #FFFFFF;
+    padding: 120px 0 50px;
+}
+.funcionamiento .instrucciones{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px; /* Reduccion espacio entre columnas*/
+    padding: 40px 70px 80px; /* Reducción el padding superior e inferior */
+    /*border: solid 1px yellow;*/
+}
+/*
+.funcionamiento .instrucciones .box {
+    height: 13px;
+
+    border-radius: 30px;
+    backdrop-filter: blur(28px);
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 100%;
+    box-shadow: 0 1px 12 px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+*/
+.funcionamiento .instrucciones .box .paso-n {
+    /*border: solid 1px red;*/
+    align-items: center;
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px; /* Reduccion espacio entre columnas*/
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.funcionamiento .instrucciones .box .paso-n .paso-numero {
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 50%;
+    /*border: solid 1px yellow;*/
+    width: 60px;
+    height: 60px;
+}
+.funcionamiento .instrucciones .box .paso-n .paso-numero p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #0A1936;
+}
+.funcionamiento .instrucciones .box .paso-n .paso-text p {
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+    color: white;
+}
+.funcionamiento .instrucciones .box img {
+    width: 90%;
+    /*border: solid 1px red;*/
+}
+
+/* ----------------------------------------------------------------------- NUESTRO EQUIPO */
+.equipo {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0 30px;
+}
+.equipo h2 {
+    color: #FFFFFF;
+    padding: 80px 0 50px;
+}
+.equipo .nosotros{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px; /* Reduccion espacio entre columnas*/
+    padding: 20px 0px 80px; /* Reducción el padding superior e inferior */
+}
+.equipo .nosotros .box img {
+    width: 250px;
+}
+.equipo .nosotros .box h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.equipo .nosotros .box p {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------- RESPALDO */
+/* estilos generales de la seccion */
+.respaldo {
+    background-color: #0A1936;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+/* estilo del titulo de la seccion */
+.respaldo h2 {
+    color: #FFFFFF;
+    padding: 100px 0 50px;
+}
+/* estilo de cada recuadro de participación */
+.respaldo .participacion{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Reduccion espacio entre columnas*/
+    padding: 30px 0px 10px; /* Reducción el padding superior e inferior */
+}
+/* estilo de los titulos de cada columna de la seccion */
+.respaldo .participacion .box h3{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/* estilos de los parrafos de cada columna en el footer */
+.respaldo .participacion .box p{
+    color: #efefef;
+    margin: 20px 0;
+}
+/* img de los logos de cada programa */
+.respaldo .participacion .box img{
+    width: 250px; /* Reduzco el tamaño de la imagen */
+    height: 230px; /* Ajusto la altura automáticamente */
+}
+
+
+
+
+
+/* TEMPORAL */
+/*
+.saludo, .video-demo, .actividades, .funcionamiento, .testimonios, .respaldo {
+    border: solid yellow 1px;
+}
+*/
+
+
+
+/* ----------------------------------------------------------------------- BOTONES FLOTANTES */
+#logo_whatsapp{
+    position: fixed;
+    height: 70px;
+    left: 20px;
+    z-index: 100;
+    bottom: 25px;
+}
+#boton_acceso_anticipado {
+    background-color: white;
+    position: fixed;
+    top: 100px;
+    left: unset;
+    right: 80px;
+    width: 25%;
+    z-index: 10;
+
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0A1936;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------- FOOTER */
+/* comienzo del footer */
+/* ambos */
+footer {
+    text-align: center;
+}
+.pie-de-pagina{
+    width: 100%;
+    /*background-color: #07243d;*/
+    /*background-color: #0A1931;*/
+    background: linear-gradient(to bottom, #0A1931, #0e1924);
+}
+/* 3 columnas */
+.pie-de-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px; /* Reduccion espacio entre columnas*/
+    padding: 60px 0px 20px; /* Reducción el padding superior e inferior */
+}
+/* espacio del logo de tikray */
+.pie-de-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* img dentro del espacio del logo de tikray */
+.pie-de-pagina .grupo-1 .box figure img{
+    width: 150px; /* Reduzco el tamaño de la imagen */
+    height: auto; /* Ajusto la altura automáticamente */
+}
+/* estilo de los titulos de cada columna del footer */
+.pie-de-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/* estilos de los parrafos de cada columna en el footer */
+.pie-de-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+/* estilos de cada logo de red social 3ra colum*/
+.pie-de-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0e1924;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+}
+/* estilo para cuando se pasa el mouse sobre el logo de cada red social */
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+/* grupo 2 es la parte inferir de todo, la despedida */
+.pie-de-pagina .grupo-2{
+    background-color: #0e1924;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+/* texto dentro de la parte 2 */
+.pie-de-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* modelo responsivo, falta mucho por mejorar */
+@media screen and (max-width:800px){
+    /* ----------------------------------------------------------------------- HEADER */
+    .logo-container {
+        height: 80px;
+    }
+    .logo-container img {
+        height: 58px;
+    }
+
+    /* ----------------------------------------------------------------------- NUESTRO EQUIPO */
+    .equipo .nosotros {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 15px 25px;
+    }
+    .equipo .nosotros .box img {
+        width: 200px;
+    }
+    .equipo .nosotros .box p {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------------------------------------- SALUDO */
+    .saludo h2 {
+        font-size: 25px;
+    }
+    .saludo h1 {
+        font-size: 60px;
+    }
+    .saludo img {
+        width: 160px;
+    }
+    .saludo h3 {
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .saludo p {
+        font-size: 16px;
+    }
+    /* ----------------------------------------------------------------------- VIDEO DEMO */
+    .video-iframe {
+        width: 90%;
+        height: 100%;
+    }
+    /* ----------------------------------------------------------------------- ACTIVIDADES */
+    .actividades .roles {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 40px;
+    }
+    .actividades .roles .box .contenedor p {
+        font-size: 16px;
+    }
+    /* ----------------------------------------------------------------------- FUNCIONES */
+    .funcionamiento .instrucciones {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 10px 40px;
+    }
+    .funcionamiento h2 {
+        padding-bottom: 10px;
+    }
+    .funcionamiento .instrucciones .box .paso-n .paso-numero {
+        width: 50px;
+        height: 50px;
+    }
+    .funcionamiento .instrucciones .box .paso-n .paso-numero p {
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    .funcionamiento .instrucciones .box .paso-n .paso-text p {
+        font-size: 18px;
+    }
+    .funcionamiento .instrucciones .box img {
+        width: 250px;
+    }
+    /* ----------------------------------------------------------------------- RESPALDO */
+    .respaldo .participacion {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 15px 25px;
+    }
+    .respaldo h2, .actividades h2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .respaldo .participacion .box img{
+        width: 200px; /* Reduzco el tamaño de la imagen */
+        height: 180px; /* Ajusto la altura automáticamente */
+    }
+
+    /* ----------------------------------------------------------------------- BOTONES FLOTANTES */
+    #logo_whatsapp{
+        height: 60px;
+    }
+    #boton_acceso_anticipado {
+        width: 75%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 15px;
+    }
+    /* ----------------------------------------------------------------------- FOOTER */
+    .pie-de-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 15px 25px;
+    }
+}
